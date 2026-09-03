@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #fbfbfa;      /* app background — calm, paper-like */
+  --surface: #ffffff;    /* cards / panels */
+  --ink: #16181d;        /* primary text — not pure black */
+  --muted: #6b7280;      /* secondary text */
+  --line: #e6e6e3;       /* hairline borders */
+  --accent: #2f3ba2;     /* deep indigo — the single signal colour */
+  --status-ok: #157f4a;    /* confirmed */
+  --status-warn: #b26a00;  /* needs review / low confidence */
+  --status-risk: #b42318;  /* exception / edited-down */
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Numeric columns line up when figures use tabular, lining numerals. */
+.tabular {
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-variant-numeric: tabular-nums lining-nums;
+}

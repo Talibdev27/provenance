@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+backend/data/*
+!backend/data/.gitkeep
+
+# Node / Next
+node_modules/
+.next/
+out/
+
+# Env & secrets
+.env
+.env.local
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
