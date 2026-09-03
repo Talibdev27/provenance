@@ -26,11 +26,14 @@ control** before anything is exported.
 
 ## Run it
 
+**Requires Python 3.10+** (the code uses `X | None` type syntax). macOS ships
+3.9 as `python3`, so name the interpreter explicitly if that's your default.
+
 **Two terminals.** Backend first:
 
 ```bash
 cd backend
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python3.12 -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 cp .env.example .env          # add your ANTHROPIC_API_KEY
 uvicorn app.main:app --reload --port 8000
